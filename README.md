@@ -15,3 +15,31 @@ Dockerfile provided for building docker image and running inside container.
 For using the api and api documentation specification visit http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/ after running the web service.
 
 For simplicity embeeded H2 in memmory data base was used. For configuring any other sql database just change the: spring.datasource.url=jdbc:h2:mem:testdb spring.datasource.driverClassName=org.h2.Driver in the application.properties file.
+
+
+Example of using swagger rest api:
+![image](https://user-images.githubusercontent.com/24994775/167726479-c23acab4-84be-433e-a0f9-2e5bd479c3a9.png)
+
+
+for creating empty notebook use post request:
+curl -X 'POST' \
+  'http://localhost:8080/NoteBook?name=Gary' \
+  -H 'accept: application/json' \
+  -d ''
+
+for creating note inside already created noteook use post request of note api:
+curl -X 'POST' \
+  'http://localhost:8080/NoteBook/Note' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "title": "string",
+  "tags": [
+    "string"
+  ],
+  "body": "string",
+  "notebookId": 1
+}
+
+For all other crud request please follow open api instructions.
+
