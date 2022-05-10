@@ -8,7 +8,7 @@ Implemented with following technologies: Spring boot, maven, Sprig data jpa(hibe
 Caffeine cache.
 
 For runnig you should have installed maven 3.65 and java 11. Or run through your preferred ide without maven installed.
-for running without docker : java -jar knime-0.0.1-SNAPSHOT.jar under target folder or mvn spring-boot:run
+For running without docker : java -jar knime-0.0.1-SNAPSHOT.jar under target folder or mvn spring-boot:run
 Dockerfile provided for building docker image and running inside container.
 
 
