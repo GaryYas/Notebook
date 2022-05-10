@@ -18,7 +18,8 @@ For simplicity embeeded H2 in memmory data base was used. For configuring any ot
 
 
 Example of using swagger rest api:
-![image](https://user-images.githubusercontent.com/24994775/167726479-c23acab4-84be-433e-a0f9-2e5bd479c3a9.png)
+![image](https://user-images.githubusercontent.com/24994775/167726921-5ba1bb61-6c80-4e43-b5a9-bb750e0457d2.png)
+
 
 
 for creating empty notebook use post request:
