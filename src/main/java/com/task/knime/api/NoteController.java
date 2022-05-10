@@ -19,7 +19,7 @@ import javax.validation.Valid;
 import java.util.Map;
 
 @RestController
-@Tag(name = "Note api", description = "The note API for adding, retrieving and deleting and notes")
+@Tag(name = "Note api", description = "The note API for adding, retrieving and deleting and notes for particular Notebook")
 public class NoteController {
 
     @Autowired
