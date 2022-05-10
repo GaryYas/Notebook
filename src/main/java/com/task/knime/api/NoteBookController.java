@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@Tag(name = "Notebook api", description = "The notebook API for adding, retrieving and deleting and notes")
+@Tag(name = "Notebook api", description = "The notebook API for adding, retrieving and deleting and notebooks")
 public class NoteBookController {
 
     @Autowired
