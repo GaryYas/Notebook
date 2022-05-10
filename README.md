@@ -4,7 +4,7 @@ update organized notes. The API should support the creation and deletion of “n
 simply a collection of notes. The ability to retrieve a list of notebooks along with the number of notes in
 each one should be possible
 
-Implemented with following technologies: Spring boot, maven, Sprig data jpa(hibernate), H2 relational database, Swagger 3 open api ,junit 5, lombok and java 11,
+Implemented with following technologies: Spring boot, maven, Sprig data jpa(hibernate), H2 relational database, Swagger 3 open api ,junit 5, lombok, java 11 and
 Caffeine cache.
 
 For runnig you should have installed maven 3.65 and java 11. Or run through your preferred ide without maven installed.
