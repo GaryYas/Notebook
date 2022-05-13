@@ -23,7 +23,7 @@ public class TagController {
     @Autowired
     NoteService noteService;
 
-    @Operation(summary = "adds tags to existing note", tags = {"Note api"})
+    @Operation(summary = "adds tags to existing note", tags = {"Note tags api"})
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "create new notebook",
                     content = {@Content(mediaType = "application/json",
@@ -35,7 +35,7 @@ public class TagController {
         return ResponseEntity.ok(noteService.addTagsToNote(tagsNoteDto));
     }
 
-    @Operation(summary = "adds tags to existing note", tags = {"Note api"})
+    @Operation(summary = "delete tags from existing note", tags = {"Note tags api"})
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "create new notebook",
                     content = {@Content(mediaType = "application/json",
